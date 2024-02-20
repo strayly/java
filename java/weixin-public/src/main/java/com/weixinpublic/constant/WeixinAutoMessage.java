@@ -3,7 +3,6 @@ package com.weixinpublic.constant;
 
 
 /**
- * @author ruiguo.dong
  * 微信自动回复消息
  */
 public class WeixinAutoMessage {
