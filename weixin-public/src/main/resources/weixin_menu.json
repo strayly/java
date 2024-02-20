@@ -1,0 +1,48 @@
+{
+	"button": [{
+		"name": "顶部菜单1",
+		"sub_button": [{
+			"name": "子菜单",
+			"type": "view",
+			"url": ""
+		}, {
+			"name": "子菜单",
+			"type": "miniprogram",
+			"pagePath": "pages/job/index",
+			"appid": ""
+		}, {
+			"name": "子菜单",
+			"type": "view",
+			"url": ""
+		}, {
+			"name": "子菜单",
+			"type": "view",
+			"url": ""
+		}]
+	}, {
+		"name": "顶部菜单2",
+		"type": "view",
+		"url": ""
+	}, {
+		"name": "顶部菜单3",
+		"sub_button": [{
+			"name": "子菜单",
+			"type": "view",
+			"url": ""
+		}, {
+			"name": "子菜单",
+			"type": "miniprogram",
+			"pagePath": "",
+			"appid": ""
+		}, {
+			"name": "子菜单",
+			"type": "miniprogram",
+			"pagePath": "",
+			"appid": ""
+		}, {
+			"name": "子菜单",
+			"type": "view",
+			"url": ""
+		}]
+	}]
+}
