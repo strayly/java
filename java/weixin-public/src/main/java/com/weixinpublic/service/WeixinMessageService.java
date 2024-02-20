@@ -6,8 +6,6 @@ import com.weixinpublic.entity.bo.WxPublicUser;
 
 /**
  * @description
- * @author ruiguo.dong
- * @date 2023/12/21 15:27
  */
 public interface WeixinMessageService {
 
