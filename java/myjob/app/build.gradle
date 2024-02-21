@@ -1,0 +1,82 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 31
+    buildToolsVersion "31.0.0"
+    defaultConfig {
+        applicationId "com.xiaozhao"
+        minSdkVersion 24
+        targetSdkVersion 31
+        versionCode 1
+        versionName "1.0.5"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        //javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    //compileOptions {
+    //    sourceCompatibility JavaVersion.VERSION_1_8
+    //    targetCompatibility JavaVersion.VERSION_1_8
+    //}
+}
+
+dependencies {
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+    //implementation 'androidx.design:design:1.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation project(path: ':LRecyclerview_library')
+    //implementation 'com.github.jdsjlzx:LRecyclerView:1.5.4.3'
+    implementation 'com.zzhoujay.richtext:richtext:2.5.2'
+    implementation 'com.google.android.material:material:1.0.0'
+    //implementation 'com.carson_ho:SearchLayout:1.0.1'
+    //implementation 'com.jakewharton:butterknife:8.8.1'
+    //annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+
+    //implementation 'com.zzhoujay:html:1.0.2'
+
+    //implementation 'com.zzhoujay.okhttpimagedownloader:OkHttpImageDownloader:1.0.2'
+    implementation 'com.squareup.okhttp3:okhttp:3.5.0'
+    implementation project(path: ':promptlibrary')
+    implementation project(path: ':popupwindowlibrary')
+    implementation 'com.ashokvarma.android:bottom-navigation-bar:2.1.0'
+    //implementation 'com.jakewharton:butterknife:5.1.1'
+   // implementation "com.jakewharton:butterknife:10.0.0"
+    //annotationProcessor "com.jakewharton:butterknife-compiler:10.0.0"
+    //implementation 'com.zzhoujay.glideimagegetter:glideimagegetter:1.0.5'
+    //implementation 'com.zzhoujay:html:latest-version'
+    //https://github.com/zzhoujay/RichText
+    //implementation 'org.jsoup:jsoup:1.14.1'
+    //implementation 'com.github.mcxtzhang:SwipeDelMenuLayout:V1.3.0'
+    //implementation 'com.github.SheHuan:RecyclerViewAdapter:1.2.9'
+    //implementation 'com.jcodecraeer:xrecyclerview:1.6.0'
+    /*
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation 'com.android.support:appcompat-v7:25.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.android.support:design:25.+'
+    implementation 'com.android.support:recyclerview-v7:25.+'
+    implementation 'com.android.support:cardview-v7:25.+'
+    implementation 'junit:junit:4.12'
+     */
+    //implementation 'com.github.jenly1314:zxing-lite:2.2.0'
+    //implementation 'com.github.jenly1314:zxing-lite:2.1.1'
+    //implementation 'com.king.zxing:zxing-lite:2.0.3'
+    //implementation 'com.king.zxing:zxing-lite:1.1.9-androidx'
+    implementation 'com.google.zxing:core:3.3.3'
+    implementation 'com.github.maning0303:MNZXingCode:V2.1.8'
+}
+

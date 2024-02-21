@@ -1,0 +1,2 @@
+include ':app', ':LRecyclerview_library', ':promptlibrary', ':popupwindowlibrary'
+rootProject.name='myjob'
