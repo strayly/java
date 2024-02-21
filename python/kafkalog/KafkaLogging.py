@@ -1,3 +1,4 @@
+#将logging集成到kafka 实现分布式日志收集
 import logging
 import json
 from datetime import datetime
